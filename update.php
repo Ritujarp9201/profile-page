@@ -14,18 +14,33 @@ if ($result->num_rows > 0) {
 <head>
     <meta charset="UTF-8">
     <title>Update Profile</title>
-    <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css"> <!-- Assuming your custom styles are in styles.css -->
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
-    <h1>Update Profile</h1>
-    <form action="update_process.php" method="POST">
-        <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" value="<?php echo $row['name']; ?>" required>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" value="<?php echo $row['email']; ?>" required>
-        <button type="submit">Update</button>
-    </form>
+<div class='profile padding'>
+    <div class=''>
+        <div class='card card-no-border'>
+            <!-- <img class='card-img-top' src='https://i.imgur.com/K7A78We.jpg' alt='Card image cap'> -->
+            <h1 class="create-heading" style="color:black">Update Profile</h1>
+            <form action="update_process.php" method="POST">
+                <div class="create-formcontent">
+                    <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
+                    <label class="create-label" for="name">Name:</label>
+                    <input class="create-input" type="text" id="name" name="name" value="<?php echo $row['name']; ?>" required>
+                    <label class="create-label" for="email">Email:</label>
+                    <input class="create-input" type="email" id="email" name="email" value="<?php echo $row['email']; ?>" required>
+                    <button class="global-button" type="submit">Update</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 </body>
 </html>
 <?php

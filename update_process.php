@@ -8,7 +8,7 @@ $email = $_POST['email'];
 $sql = "UPDATE users SET name='$name', email='$email' WHERE id=$id";
 
 if ($conn->query($sql) === TRUE) {
-    header('Location: index.php');
+    header('Location: index.php?update-success=true');
 } else {
     echo "Error updating profile: " . $conn->error;
 }

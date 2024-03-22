@@ -13,7 +13,7 @@
         <input class="create-input" type="text" id="name" name="name" required>
         <label class="create-label" for="email">Email:</label>
         <input class="create-input" type="email" id="email" name="email" required>
-        <button class="create-button " type="submit">Create</button>
+        <button class="global-button " type="submit">Create</button>
         </div>
     </form>
 </body>
