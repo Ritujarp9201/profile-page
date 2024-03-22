@@ -2,6 +2,7 @@
 require_once 'db_connection.php';
 
 $id = $_POST['id'];
+echo $id;
 
 $sql = "DELETE FROM users WHERE id=$id";
 

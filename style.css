@@ -18,7 +18,7 @@ body {
 } */
 
 .card{
-    border: 1px red solid;
+    padding-bottom: 1rem;
 }
 .card-img-top{
     /* height:300px; */
@@ -129,7 +129,7 @@ p {
 .create-input{
 
 }
-.create-button{
+.global-button{
     margin-top: 1rem;
     background: #7460ee;
     border: 1px solid #7460ee;
@@ -141,5 +141,33 @@ p {
     color:white;
     font-weight: 600;
     font-size: 1.5rem;
-    padding: 0.5rem 0
+    padding: 0.5rem 0;
+    /* padding: 0.5rem */
+}
+
+.update{
+    width: 5rem;
+    font-weight: 400;
+    font-size: 1rem;
+    margin-right: 1rem;
+    padding: 0.5rem
+}
+
+.delete{
+    width: 5rem;
+    font-weight: 400;
+    font-size: 1rem;
+}
+.active{
+    display: flex;
+    flex-direction: column;
+}
+.inactide{
+    display: none;
+}
+
+.success-message{
+    font-weight: 400;
+    font-size: 1rem;
+    padding-left: 1rem;
 }
