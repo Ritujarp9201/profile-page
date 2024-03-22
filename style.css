@@ -171,3 +171,54 @@ p {
     font-size: 1rem;
     padding-left: 1rem;
 }
+
+/* Header styles */
+header {
+    background-color: #000000; /* White background color */
+    color: #60d5f2; /* White text color */
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+}
+
+header h1 {
+    color: hsl(0, 0%, 100%); /* Optional: Text color */
+}
+header h2 {
+    color: hsl(0, 0%, 100%); /* Optional: Text color */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff; /* White link color */
+}
+
+/* Footer styles */
+footer {
+    background-color: #000000; /* black background color */
+    color: #fff; /* White text color */
+    padding: 10px;
+    margin-top: 10px; /* Optional: Add some space at the top */
+    text-align: center;
+    border-top: 1px solid #ccc; /* Optional: Add a border at the top */
+}
+
+footer p {
+    margin: 5;
+}
+
+/* Optional: Add some spacing between header and main content */
+main {
+    margin-top: 10px;
+}
+

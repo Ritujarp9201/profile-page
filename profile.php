@@ -1,3 +1,4 @@
+<?php require_once 'header.php'; ?>
 <?php
 require_once 'db_connection.php';
 
@@ -43,3 +44,4 @@ if ($result->num_rows > 0) {
 
 $conn->close();
 ?>
+<?php require_once 'footer.php'; ?>
