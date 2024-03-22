@@ -13,6 +13,12 @@ if ($result->num_rows > 0) {
     if(isset($_GET['success']) && $_GET['success'] == 'true') {
         echo '<p class="success-message">Profile created successfully!</p>';
     }
+    if(isset($_GET['update-success']) && $_GET['update-success'] == 'true') {
+        echo '<p class="success-message">Profile updated successfully!</p>';
+    }
+    if(isset($_GET['delete-success']) && $_GET['delete-success'] == 'true') {
+        echo '<p class="success-message">Profile deleted successfully!</p>';
+    }
 
     echo "<hr>";
 
